@@ -52,10 +52,10 @@ const primero = new Typed('.primero', {
 });
 
 const resp = new Typed('.resp', {
-    strings: [" Agustin Peiretti. "],
+    strings: [" Agus <br> Peiretti. "],
     stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
-	typeSpeed: 95, // Velocidad en mlisegundos para poner una letra,
-	startDelay: 3200, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	typeSpeed: 65, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 3100, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
 	backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
 	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
 	shuffle: false, // Alterar el orden en el que escribe las palabras.
