@@ -1,0 +1,20 @@
+@import "swich";
+@import "variables";
+@import "header";
+@import "header";
+@import "navbar";
+@import "main";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    body{
+        font-family: sans-serif;
+        background-color:#121a2d ;
+        
+    }
+
+    html {
+        scroll-behavior: smooth;}

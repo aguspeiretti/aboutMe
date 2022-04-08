@@ -1,0 +1,429 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url(../imagenes/lisod1.gif) no-repeat center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #121a2d;}
+  
+    
+/*redes sociales*/
+
+
+
+.redes {
+    position: fixed;
+    bottom: 52px;
+    left: 30px;
+    color: #fff;
+    
+    ul {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 90px;
+      &::after {
+        content: "";
+        margin-top: 65px;
+        position: relative;
+        width: 100px;
+        height: 1px;
+        background: currentColor;
+        top: 50%;
+        left: -25%;
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+      }
+      li {
+        list-style: none;
+        padding: 10px;
+        font-size: 18px;
+        margin-left: -50px;
+        
+        a {
+            color: $gris;
+          &:hover {
+            color: $aqua;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+  
+  /*Email*/
+  
+  
+  .email {
+    position: fixed;
+    bottom: 205px;
+    right: -10px;
+  
+    .emailbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 30px;
+      margin-top: 30%;
+      margin-left: 40%;
+      transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+  
+      a {
+        font-size: 13px;
+        text-decoration: none;
+        letter-spacing: 5px;
+        font-weight: 300;
+        font-family:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;; ;
+        color: $gris;
+        &:hover {
+          color: $aqua;
+        }
+        &::after {
+          content: "";
+          margin-left: 30px;
+          position: absolute;
+          width: 100px;
+          height: 1px;
+          background: $gris;
+          top: 1rem;
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  /*textos maquina*/
+  
+  
+  
+  .web {
+    .texto {
+      position: absolute;
+      bottom: 47%;
+      left: 18%;
+      font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+        -apple-system, system-ui, sans-serif;
+      font-size: 3.2em;
+      font-weight: bold;
+      width: 250px;
+      height: 200px;
+      color: $gris;
+      
+  
+      
+    }
+    .texto2 {
+      position: absolute;
+      bottom: 5%;
+      left: 67%;
+      font-size: 3.2rem;
+      width: 220px;
+      font-weight: bold;
+      font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+        -apple-system, system-ui, sans-serif;
+      height: 200px;
+      color: $gris;
+      
+    }
+    .texto3{
+        display: none;
+        
+    }
+    .texto4{
+        display: none;
+    }
+  .texto5{
+      display: none;
+  }
+     
+  
+    }
+  
+  .btn-seguir{display: none;}
+    
+  
+  /*boton bajar*/
+  .elemento {
+    width: 80px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 28%;
+    .animatedColor {
+      color: $gris;
+    }
+    .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px;
+      &:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: $turco;
+      }
+    }
+  }
+  @keyframes arrow {
+    0% {
+      transform: translate(0px, 50px);
+    }
+    50% {
+      transform: translate(0px, 60px);
+    }
+    100% {
+      transform: translate(0px, 50px);
+    }
+  }
+  
+  /*responsive*/
+  
+  @media screen and (max-width:952px) {
+      .menuItem li a{
+          font-size: 16px;
+      }
+      .web{
+          .texto{
+              font-size: 2.3rem;
+          }
+          .texto2{
+              font-size: 2.3rem;
+          }
+      }
+      
+  }
+  @media screen and (max-width:765px) {
+    .header{
+      height: 100vh;
+    }
+      
+          .logo{
+            padding-left: -50px;
+          }
+      }
+     
+      .menuItem {
+          position: fixed;
+          width: 100vw;
+          height: calc(100% - 65px);
+          background-color: #121a2d;
+          top: -100vh;
+          text-align: center;
+          transition: all .4s;
+          flex-direction: column;
+          li{
+              height: 70px;
+              padding-top: 40px;
+              line-height: 0px;  
+              text-align: center;
+              a{
+                font-size: 40px;
+                color: aliceblue;
+                font-weight: bold;
+                &a:hover{
+                  color: aqua;
+              }
+              }
+            }
+            
+      }
+      
+      .email{
+          display: none;
+      }
+      .redes{
+          display: none;
+      }
+      .header{
+          background-image: none;
+      }
+  
+        .web{
+          padding-top: 160px;
+          height: 300px;
+          .texto{
+              display: none;
+          }
+          .texto2{
+              display: none;
+          }
+  
+          .texto4{
+              
+            display: inline-block;
+            color: $aqua;
+            font-family:monospace;
+            width: 100%;
+            font-size: clamp(14px,6vw, 16px);
+            font-weight: bold;
+            padding-left: 60px;
+            padding-top: 20px;
+            line-height: 0.1;
+           
+            
+           
+        }
+          .texto3{
+              
+              display: inline-block;
+              color: $gris;
+              font-family:"Calibre", "Inter", "San Francisco", "SF Pro Text",
+              -apple-system, system-ui, sans-serif; ;
+              width: 100%;
+              font-size:  clamp(40px, 8vw, 80px);
+              font-weight: bold;
+              padding-left: 50px;
+              padding-top: 50px;
+              
+              line-height: 0.9;
+              
+             
+          }
+       
+          .texto5{
+              
+              display: inline-block;
+              color: #8892b0;
+              font-family:"Calibre", "Inter", "San Francisco", "SF Pro Text",
+              -apple-system, system-ui, sans-serif; ;
+              width: 100%;
+              font-size: clamp(40px, 8vw, 80px);
+              font-weight: bold;
+              padding-left: 50px;
+              padding-top: 40px;
+              line-height: 1.1;
+              
+             
+          }
+      }
+      .btn-seguir {
+        display: inline-block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 199px;
+        display: flex;
+        justify-content: center;
+      }
+      .btn1 {
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        border: 1px solid $aqua;
+        border-radius: 3px;
+        font-family:monospace ;
+        color: $aqua;
+        }
+  
+        .elemento{display: none;}
+  
+        
+      
+  
+  @media screen and (max-width:858px) and (orientation: landscape) {
+      
+      .menuItem{
+          overflow: scroll;
+          height: calc(100% - 65px);
+          li{
+              margin: 5px;
+          }
+      }
+  
+    } 
+
+    @media screen and (max-width:480px){
+        .web{
+            padding-top: 160px;
+            height: 300px;
+            .texto{
+                display: none;
+            }
+            .texto2{
+                display: none;
+            }
+    
+            .texto4{
+                
+              display: inline-block;
+              color: $aqua;
+              font-family:monospace;
+              width: 100%;
+              font-size: clamp(14px,8vw, 30px);
+              font-weight: bold;
+              padding-left: 60px;
+              padding-top: 20px;
+              line-height: 0.1;
+             
+              
+             
+          }
+            .texto3{
+                
+                display: inline-block;
+                color: $gris;
+                font-family:"Calibre", "Inter", "San Francisco", "SF Pro Text",
+                -apple-system, system-ui, sans-serif; ;
+                width: 100%;
+                font-size:  clamp(40px, 20vw, 80px);
+                font-weight: bold;
+                padding-left: 50px;
+                padding-top: 50px;
+                
+                line-height: 0.9;
+                
+               
+            }
+         
+            .texto5{
+                
+                display: inline-block;
+                color: #8892b0;
+                font-family:"Calibre", "Inter", "San Francisco", "SF Pro Text",
+                -apple-system, system-ui, sans-serif; ;
+                width: 100%;
+                font-size: clamp(40px, 15vw, 80px);
+                font-weight: bold;
+                padding-left: 50px;
+                padding-top: 40px;
+                line-height: 1.1;
+                
+               
+            }
+            
+
+    }
+    .btn-seguir {
+        display: inline-block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top:330px;
+        display: flex;
+        justify-content: center;
+      }
+      .btn1 {
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        border: 1px solid $aqua;
+        border-radius: 3px;
+        font-family:monospace ;
+        color: $aqua;
+        }
+  
+
+    
+
+    }

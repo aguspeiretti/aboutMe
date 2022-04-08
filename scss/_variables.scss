@@ -1,0 +1,138 @@
+$azul: #121a2d;
+$negro: #000;
+$gris: #ccd6f6;
+$naranja: rgb(236, 139, 59);
+$turco: #3ed1b4;
+$btn: rgb(25, 24, 61);
+$aqua: #64e1da;
+
+@mixin elemento {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+  
+    .animatedColor {
+      color: $gris;
+    }
+    .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px;
+      &:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: $turco;
+      }
+    }
+    @keyframes arrow {
+      0% {
+        transform: translate(0px, 50px);
+      }
+      50% {
+        transform: translate(0px, 60px);
+      }
+      100% {
+        transform: translate(0px, 50px);
+      }
+    }
+  }
+  @mixin elementoD {
+    .animatedColor {
+      color: $negro;
+    }
+    .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px;
+      &:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: $naranja;
+      }
+    }
+  }
+  @mixin elementoA {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -110px;
+    left: 15px;
+    .animatedColor {
+      color: $gris;
+    }
+    .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px;
+      &:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: $turco;
+      }
+    }
+    @keyframes arrow {
+      0% {
+        transform: translate(0px, 50px);
+      }
+      50% {
+        transform: translate(0px, 60px);
+      }
+      100% {
+        transform: translate(0px, 50px);
+      }
+    }
+  }
+  @mixin elementoM {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+  
+    .animatedColor {
+      color: $gris;
+    }
+    .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px;
+      &:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: $turco;
+      }
+    }
+    @keyframes arrow {
+      0% {
+        transform: translate(0px, 50px);
+      }
+      50% {
+        transform: translate(0px, 60px);
+      }
+      100% {
+        transform: translate(0px, 50px);
+      }
+    }
+  }
+  @mixin elemento7 {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -60px;
+    left: 0px;
+    .animatedColor {
+      color: $gris;
+    }
+    .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px;
+      &:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: $turco;
+      }
+    }
+    @keyframes arrow {
+      0% {
+        transform: translate(0px, 50px);
+      }
+      50% {
+        transform: translate(0px, 60px);
+      }
+      100% {
+        transform: translate(0px, 50px);
+      }
+    }
+  }

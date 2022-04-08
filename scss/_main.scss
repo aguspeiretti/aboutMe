@@ -1,0 +1,302 @@
+
+.main {
+  
+    width: 90%;
+    margin: 0 auto;
+    background-color: $azul;
+    background-size: cover;
+    color: $gris;
+    font-family:"Calibre", "Inter", "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, sans-serif ;
+  
+    .skillContainer {
+      
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $azul;
+  
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 80%;
+       
+        .lenguageContainer {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+  
+          .lenguage {
+            width: 80%;
+            color: $gris;
+          }
+        }
+        .iconos {
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+          .borde {
+            border: 2px solid $turco;
+            position: absolute;
+            margin-top: -10px;
+            margin-left: -30px;
+            width: 400px;
+            height: 300px;
+          }
+  
+          ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 400px;
+            height: 300px;
+            justify-items: center;
+            align-items: center;
+            border: 2px solid $turco;
+            li {
+              list-style: none;
+              font-size: 14px;
+             
+              display: flex;
+              flex-wrap: wrap;
+              width: 40px;
+              height: 90px;
+              .ico {
+                height: 37px;
+                font-size: 40px;
+              }
+            }
+          }
+        }
+        .elemento1 {
+            @include elemento;
+          }
+      
+      }
+    }
+    .aboutContainer {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $azul;
+  
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 70%;
+        height: 80%;
+        .aboutImg {
+          display: flex;
+          justify-content: center;
+          .borde {
+            border: 2px solid $turco;
+            position: absolute;
+            margin-top: -25px;
+            margin-left: -45px;
+            width: 320px;
+            height: 284px;
+          }
+          .imgContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+              width: 320px;
+            }
+          }
+        }
+        .aboutText {
+          display: flex;
+          font-size: 18px;
+          line-height: 1.3rem;
+          justify-content: center;
+  
+          .textContainer {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+          }
+          .elemento1 {
+            @include elemento;
+          }
+          
+          }
+        }
+      }
+      .contacto {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: $azul;
+    
+        .contenedor {
+          width: 80%;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .arriba {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 50px;
+    
+            .elemento1 {
+              @include elementoA;
+            }
+          }
+    
+          .contactContainer {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+    
+            h2 {
+              font-size: 50px;
+              font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+                -apple-system, system-ui, sans-serif;
+              font-weight: bold;
+            }
+            p {
+              width: 40%;
+              color: $gris;
+              margin: 0 auto;
+              margin-top: 20px;
+              font-size: 18px;
+              text-align: center;
+    
+            }
+          }
+          .boton-contacto {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+          }
+          .btn1 {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: $turco;
+            box-shadow: 0 0 10px $turco, 0 0 40px $turco, 0 0 80px $turco;
+            transition-delay: 0.1s;
+          }
+        }
+      }
+    }
+    @media screen and (max-width:765px) {
+       
+        .main{
+            .elemento1{display: none;}
+            
+            .skillContainer{
+              
+              .skills{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 2fr;
+                align-items: flex-start;
+                .lenguageContainer{
+                    .lenguage{
+                        h2 ,p{
+                            text-align: center;
+                        }
+                    }
+                }
+              }
+              .iconoContainer{
+                .iconos{
+                    .borde{
+                        width: 54vw;
+                    }
+                    ul{
+                        grid-template-columns: 1fr 1fr;
+                        text-align: center;
+                        width: 54vw;
+                        li{
+                            
+                            .ico{
+                                font-size:clamp(30px, 7vw, 80px);
+                            }
+                        }
+                    }
+
+                }
+                
+            }
+            }
+            .aboutContainer{
+                .about{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1.3fr;
+                    width: 90%;
+                    margin: 0 auto;
+                    
+                
+                .aboutText{
+                    width: 100%;
+                    margin: 0 auto;
+                    .textContainer{
+                        width: 100%;
+                        text-align: center;
+                        text-align: left;
+                    }
+                    
+                }
+                .aboutImg{
+                    .borde{
+                        display: none;
+                    }
+                    .imgContainer{
+                        align-items:center;                     
+                    }
+                }
+
+                }
+            }
+            .contacto{
+                .elemento1{display: none;}
+                .contenedor{
+                    width: 90%;
+                    .contactContainer{
+                        width: 100%;
+                        text-align: left;
+                        P{
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+            }
+        
+          }
+          .top{display: none;}
+    
+    }
+    @media screen and (max-width:480px) {
+      
+    }
