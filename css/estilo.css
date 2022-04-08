@@ -204,98 +204,79 @@
   .header {
     height: 100vh; }
   .logo {
-    padding-left: -50px; } }
-
-.menuItem {
-  position: fixed;
-  width: 100vw;
-  height: calc(100% - 65px);
-  background-color: #121a2d;
-  top: -100vh;
-  text-align: center;
-  transition: all .4s;
-  flex-direction: column; }
-  .menuItem li {
-    height: 70px;
-    padding-top: 40px;
-    line-height: 0px;
-    text-align: center; }
-    .menuItem li a {
-      font-size: 40px;
-      color: aliceblue;
-      font-weight: bold; }
-      .menuItem li aa:hover {
-        color: aqua; }
-
-.email {
-  display: none; }
-
-.redes {
-  display: none; }
-
-.header {
-  background-image: none; }
-
-.web {
-  padding-top: 160px;
-  height: 300px; }
-  .web .texto {
+    padding-left: -50px; }
+  .menuItem {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background-color: #121a2d;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column; }
+  .email {
     display: none; }
-  .web .texto2 {
+  .redes {
     display: none; }
-  .web .texto4 {
+  .header {
+    background-image: none; }
+  .web {
+    padding-top: 160px;
+    height: 300px; }
+    .web .texto {
+      display: none; }
+    .web .texto2 {
+      display: none; }
+    .web .texto4 {
+      display: inline-block;
+      color: #64e1da;
+      font-family: monospace;
+      width: 100%;
+      font-size: clamp(14px, 8vw, 30px);
+      font-weight: bold;
+      padding-left: 60px;
+      padding-top: 20px;
+      line-height: 0.1; }
+    .web .texto3 {
+      display: inline-block;
+      color: #ccd6f6;
+      font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+      width: 100%;
+      font-size: clamp(40px, 20vw, 80px);
+      font-weight: bold;
+      padding-left: 50px;
+      padding-top: 50px;
+      line-height: 0.9; }
+    .web .texto5 {
+      display: inline-block;
+      color: #8892b0;
+      font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+      width: 100%;
+      font-size: clamp(40px, 15vw, 80px);
+      font-weight: bold;
+      padding-left: 50px;
+      padding-top: 40px;
+      line-height: 1.1; }
+  .btn-seguir {
     display: inline-block;
-    color: #64e1da;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 330px;
+    display: flex;
+    justify-content: center; }
+  .btn1 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #64e1da;
+    border-radius: 3px;
     font-family: monospace;
-    width: 100%;
-    font-size: clamp(14px, 6vw, 16px);
-    font-weight: bold;
-    padding-left: 60px;
-    padding-top: 20px;
-    line-height: 0.1; }
-  .web .texto3 {
-    display: inline-block;
-    color: #ccd6f6;
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    width: 100%;
-    font-size: clamp(40px, 8vw, 80px);
-    font-weight: bold;
-    padding-left: 50px;
-    padding-top: 50px;
-    line-height: 0.9; }
-  .web .texto5 {
-    display: inline-block;
-    color: #8892b0;
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    width: 100%;
-    font-size: clamp(40px, 8vw, 80px);
-    font-weight: bold;
-    padding-left: 50px;
-    padding-top: 40px;
-    line-height: 1.1; }
-
-.btn-seguir {
-  display: inline-block;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 199px;
-  display: flex;
-  justify-content: center; }
-
-.btn1 {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  border: 1px solid #64e1da;
-  border-radius: 3px;
-  font-family: monospace;
-  color: #64e1da; }
-
-.elemento {
-  display: none; }
+    color: #64e1da; }
+  .elemento {
+    display: none; } }
 
 @media screen and (max-width: 858px) and (orientation: landscape) {
   .menuItem {
@@ -513,98 +494,79 @@
   .header {
     height: 100vh; }
   .logo {
-    padding-left: -50px; } }
-
-.menuItem {
-  position: fixed;
-  width: 100vw;
-  height: calc(100% - 65px);
-  background-color: #121a2d;
-  top: -100vh;
-  text-align: center;
-  transition: all .4s;
-  flex-direction: column; }
-  .menuItem li {
-    height: 70px;
-    padding-top: 40px;
-    line-height: 0px;
-    text-align: center; }
-    .menuItem li a {
-      font-size: 40px;
-      color: aliceblue;
-      font-weight: bold; }
-      .menuItem li aa:hover {
-        color: aqua; }
-
-.email {
-  display: none; }
-
-.redes {
-  display: none; }
-
-.header {
-  background-image: none; }
-
-.web {
-  padding-top: 160px;
-  height: 300px; }
-  .web .texto {
+    padding-left: -50px; }
+  .menuItem {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background-color: #121a2d;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column; }
+  .email {
     display: none; }
-  .web .texto2 {
+  .redes {
     display: none; }
-  .web .texto4 {
+  .header {
+    background-image: none; }
+  .web {
+    padding-top: 160px;
+    height: 300px; }
+    .web .texto {
+      display: none; }
+    .web .texto2 {
+      display: none; }
+    .web .texto4 {
+      display: inline-block;
+      color: #64e1da;
+      font-family: monospace;
+      width: 100%;
+      font-size: clamp(14px, 8vw, 30px);
+      font-weight: bold;
+      padding-left: 60px;
+      padding-top: 20px;
+      line-height: 0.1; }
+    .web .texto3 {
+      display: inline-block;
+      color: #ccd6f6;
+      font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+      width: 100%;
+      font-size: clamp(40px, 20vw, 80px);
+      font-weight: bold;
+      padding-left: 50px;
+      padding-top: 50px;
+      line-height: 0.9; }
+    .web .texto5 {
+      display: inline-block;
+      color: #8892b0;
+      font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+      width: 100%;
+      font-size: clamp(40px, 15vw, 80px);
+      font-weight: bold;
+      padding-left: 50px;
+      padding-top: 40px;
+      line-height: 1.1; }
+  .btn-seguir {
     display: inline-block;
-    color: #64e1da;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 330px;
+    display: flex;
+    justify-content: center; }
+  .btn1 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #64e1da;
+    border-radius: 3px;
     font-family: monospace;
-    width: 100%;
-    font-size: clamp(14px, 6vw, 16px);
-    font-weight: bold;
-    padding-left: 60px;
-    padding-top: 20px;
-    line-height: 0.1; }
-  .web .texto3 {
-    display: inline-block;
-    color: #ccd6f6;
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    width: 100%;
-    font-size: clamp(40px, 8vw, 80px);
-    font-weight: bold;
-    padding-left: 50px;
-    padding-top: 50px;
-    line-height: 0.9; }
-  .web .texto5 {
-    display: inline-block;
-    color: #8892b0;
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    width: 100%;
-    font-size: clamp(40px, 8vw, 80px);
-    font-weight: bold;
-    padding-left: 50px;
-    padding-top: 40px;
-    line-height: 1.1; }
-
-.btn-seguir {
-  display: inline-block;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 199px;
-  display: flex;
-  justify-content: center; }
-
-.btn1 {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  border: 1px solid #64e1da;
-  border-radius: 3px;
-  font-family: monospace;
-  color: #64e1da; }
-
-.elemento {
-  display: none; }
+    color: #64e1da; }
+  .elemento {
+    display: none; } }
 
 @media screen and (max-width: 858px) and (orientation: landscape) {
   .menuItem {
