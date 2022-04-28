@@ -117,7 +117,7 @@
       font-size: 13px;
       text-decoration: none;
       letter-spacing: 5px;
-      font-weight: 300;
+      font-weight: bolder;
       font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
       color: #ccd6f6; }
       .email .emailbox a:hover {
@@ -407,7 +407,7 @@
       font-size: 13px;
       text-decoration: none;
       letter-spacing: 5px;
-      font-weight: 300;
+      font-weight: bolder;
       font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
       color: #ccd6f6; }
       .email .emailbox a:hover {
@@ -647,9 +647,11 @@
     height: 70px;
     margin: 0 auto; }
     .nav-container .nav .logo {
-      padding-left: 30px; }
-      .nav-container .nav .logo img {
-        width: 30px; }
+      width: 30px;
+      height: 30px;
+      margin-left: 30px;
+      background-image: url(../imagenes/acolor.gif);
+      background-size: cover; }
     .nav-container .nav .nav-toggle {
       color: #3bd3a5;
       background: none;
@@ -971,6 +973,149 @@
         width: 100%; }
   .top {
     display: none; } }
+
+.dark {
+  background-color: #ffffff; }
+  .dark .header {
+    width: 100%;
+    height: 100vh;
+    background: url(../imagenes/lisod.gif) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #ffffff; }
+    .dark .header .nav-container {
+      background-color: #b7b7b7;
+      height: 60px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100; }
+      .dark .header .nav-container .nav .logo {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+        background-image: url(../imagenes/byn.gif);
+        background-size: cover; }
+      .dark .header .nav-container .nav .nav-menu .nav-link {
+        color: #000; }
+        .dark .header .nav-container .nav .nav-menu .nav-link:hover {
+          color: #ec8b3b; }
+    .dark .header .redes {
+      color: #000; }
+      .dark .header .redes a {
+        color: #000; }
+        .dark .header .redes a:hover {
+          color: #ec8b3b; }
+    .dark .header .email {
+      color: #000; }
+      .dark .header .email a {
+        color: #000;
+        font-weight: bolder; }
+        .dark .header .email a::after {
+          content: "";
+          margin-left: 30px;
+          position: absolute;
+          width: 100px;
+          height: 1px;
+          background: #000;
+          top: 1rem; }
+        .dark .header .email a:hover {
+          color: #ec8b3b; }
+    .dark .header .web .texto {
+      color: #000; }
+    .dark .header .web .texto2 {
+      color: #000; }
+    .dark .header .elemento {
+      width: 80px;
+      height: 50px;
+      margin: 0 auto;
+      position: absolute;
+      margin-top: 400px;
+      margin-left: 28%; }
+      .dark .header .elemento .animatedColor {
+        color: #000; }
+        .dark .header .elemento .animatedColor:hover {
+          color: #ec8b3b; }
+  .dark .main {
+    color: #000; }
+    .dark .main .skillContainer {
+      background-color: #ffffff;
+      color: #000; }
+      .dark .main .skillContainer .skills .lenguageContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .dark .main .skillContainer .skills .lenguageContainer .lenguage {
+          width: 80%;
+          color: #000; }
+      .dark .main .skillContainer .skills .iconos {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px; }
+        .dark .main .skillContainer .skills .iconos .borde {
+          border: 2px solid #ec8b3b;
+          position: absolute;
+          margin-top: -10px;
+          margin-left: -30px;
+          width: 400px;
+          height: 300px; }
+        .dark .main .skillContainer .skills .iconos ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          width: 400px;
+          height: 300px;
+          justify-items: center;
+          align-items: center;
+          border: 2px solid #ec8b3b; }
+      .dark .main .skillContainer .skills .elemento1 .animatedColor {
+        color: #000; }
+      .dark .main .skillContainer .skills .elemento1 .flecha {
+        animation: arrow 1s ease-in-out infinite;
+        font-size: 20px; }
+        .dark .main .skillContainer .skills .elemento1 .flecha:hover {
+          animation: arrow 1s ease-out infinite !important;
+          color: #ec8b3b; }
+  .dark .aboutContainer {
+    background-color: #ffffff; }
+    .dark .aboutContainer .about .aboutText .textContainer .elemento1 .animatedColor {
+      color: #000; }
+    .dark .aboutContainer .about .aboutText .textContainer .elemento1 .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px; }
+      .dark .aboutContainer .about .aboutText .textContainer .elemento1 .flecha:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: #ec8b3b; }
+    .dark .aboutContainer .about .aboutImg .borde {
+      border: 2px solid #ec8b3b; }
+  .dark .contacto {
+    background-color: #ffffff; }
+    .dark .contacto .contenedor .contactContainer {
+      background-color: #ffffff; }
+      .dark .contacto .contenedor .contactContainer p {
+        color: #000; }
+      .dark .contacto .contenedor .contactContainer .btn1 {
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: #ec8b3b;
+        box-shadow: 0 0 10px #ec8b3b, 0 0 40px #ec8b3b, 0 0 80px #ec8b3b;
+        transition-delay: 0.1s; }
+    .dark .contacto .contenedor .arriba .elemento1 .animatedColor {
+      color: #000; }
+    .dark .contacto .contenedor .arriba .elemento1 .flecha {
+      animation: arrow 1s ease-in-out infinite;
+      font-size: 20px; }
+      .dark .contacto .contenedor .arriba .elemento1 .flecha:hover {
+        animation: arrow 1s ease-out infinite !important;
+        color: #ec8b3b; }
 
 * {
   margin: 0;
