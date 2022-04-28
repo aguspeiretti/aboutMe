@@ -685,7 +685,7 @@
   .nav-container {
     height: 60px; }
     .nav-container .nav .nav-toggle {
-      color: #000;
+      color: #64e1da;
       display: block;
       padding-right: 40px; }
     .nav-container .nav .logo {
@@ -1171,17 +1171,10 @@
       border-radius: 3px;
       font-family: monospace;
       color: #ec8b3b; }
-    .dark .main .skillContainer .iconoContainer .icono .borde {
-      width: 54vw; }
-    .dark .main .skillContainer .iconoContainer .icono ul {
-      grid-template-columns: 1fr 1fr;
-      text-align: center;
-      width: 54vw; }
-      .dark .main .skillContainer .iconoContainer .icono ul li .ico {
-        font-size: clamp(30px, 7vw, 80px); }
     .dark .nav-container {
       height: 60px; }
       .dark .nav-container .nav .nav-toggle {
+        color: #000;
         display: block;
         padding-right: 40px; }
       .dark .nav-container .nav .logo {
