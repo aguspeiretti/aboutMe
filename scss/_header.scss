@@ -47,6 +47,7 @@
         
         a {
             color: $gris;
+            padding: 10px;
           &:hover {
             color: $aqua;
             margin-left: 15px;
@@ -165,6 +166,7 @@
     .flecha {
       animation: arrow 1s ease-in-out infinite;
       font-size: 20px;
+      
       &:hover {
         animation: arrow 1s ease-out infinite !important;
         color: $turco;
